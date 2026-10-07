@@ -1,137 +1,136 @@
-// import { FaRegCopyright } from "react-icons/fa";
+
 
 export default function Footer() {
   return (
-     <footer className="mt-16 bg-gray-950 text-gray-300">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+    <div className=" bg-gray-950 text-white">
+      <div className="mx-auto max-w-7xl px-6 py-12">
 
-          {/* Logo & Description */}
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
           <div>
-            <a
-              href="#"
-              className="bg-linear-to-r from-[#8B5CF6] to-[#EC4899] bg-clip-text text-3xl font-bold text-transparent"
-            >
+            <h2 className="text-3xl font-bold bg-linear-to-r from-[#461ea4] via-[#451f69] to-[#d80b72] bg-clip-text text-transparent">
               LOGO
-            </a>
+            </h2>
 
             <p className="mt-4 max-w-xs text-sm leading-6 text-gray-400">
-              Delicious food, fresh ingredients and fast delivery.
-              Enjoy your favorite meals anytime, anywhere.
+              Discover quality products, explore new collections,
+              and find everything you need in one place.
             </p>
-
-            {/* Social Icons */}
-            <div className="mt-5 flex gap-3">
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-purple-600"
-              >
-                f
-              </a>
-
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-purple-600"
-              >
-                X
-              </a>
-
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-purple-600"
-              >
-                in
-              </a>
-
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-purple-600"
-              >
-                ◎
-              </a>
-            </div>
           </div>
-
-          {/* Quick Links */}
           <div>
-            <h3 className="mb-5 text-lg font-semibold text-white">
-              Quick Links
+            <h3 className="mb-4 text-lg font-semibold">
+              Shop
             </h3>
 
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-sm text-gray-400">
               <li>
-                <a href="#" className="transition hover:text-purple-400">
-                  Home
+                <a href="#" className="transition hover:text-white">
+                  All Products
                 </a>
               </li>
+
               <li>
-                <a href="#" className="transition hover:text-purple-400">
+                <a href="#" className="transition hover:text-white">
+                  New Arrivals
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="transition hover:text-white">
+                  Best Sellers
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="transition hover:text-white">
+                  Featured Products
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="mb-4 text-lg font-semibold">
+              Company
+            </h3>
+
+            <ul className="space-y-3 text-sm text-gray-400">
+              <li>
+                <a href="#" className="transition hover:text-white">
                   About Us
                 </a>
               </li>
+
               <li>
-                <a href="#" className="transition hover:text-purple-400">
-                  Menu
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition hover:text-purple-400">
+                <a href="#" className="transition hover:text-white">
                   Contact
                 </a>
               </li>
+
+              <li>
+                <a href="#" className="transition hover:text-white">
+                  Privacy Policy
+                </a>
+              </li>
+
+              <li>
+                <a href="#" className="transition hover:text-white">
+                  Terms & Conditions
+                </a>
+              </li>
             </ul>
           </div>
-
-          {/* Services */}
           <div>
-            <h3 className="mb-5 text-lg font-semibold text-white">
-              Our Services
+            <h3 className="mb-4 text-lg font-semibold">
+              Stay Connected
             </h3>
 
-            <ul className="space-y-3 text-sm">
-              <li>🍕 Food Delivery</li>
-              <li>🍔 Fresh Food</li>
-              <li>🚚 Fast Delivery</li>
-              <li>🎁 Special Offers</li>
-            </ul>
+            <p className="mb-4 text-sm text-gray-400">
+              Subscribe to get the latest products and updates.
+            </p>
+
+            <div className="flex overflow-hidden rounded-lg border border-gray-700">
+              <input
+                type="email"
+                placeholder="Your email"
+                className="min-w-0 flex-1 bg-transparent px-4 py-3 text-sm outline-none placeholder:text-gray-500"
+              />
+
+              <button className="bg-linear-to-r from-[#461ea4] via-[#451f69] to-[#d80b72] px-5 text-sm font-semibold transition hover:opacity-90">
+                Subscribe
+              </button>
+            </div>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h3 className="mb-5 text-lg font-semibold text-white">
-              Contact Us
-            </h3>
-
-            <ul className="space-y-4 text-sm">
-              <li className="flex gap-3">
-                <span>📍</span>
-                <span>Dhaka, Bangladesh</span>
-              </li>
-
-              <li className="flex gap-3">
-                <span>📞</span>
-                <span>+880 1234-567890</span>
-              </li>
-
-              <li className="flex gap-3">
-                <span>✉️</span>
-                <span>hello@food.com</span>
-              </li>
-            </ul>
-          </div>
         </div>
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-gray-800 pt-6 text-sm text-gray-500 md:flex-row">
 
-        {/* Bottom */}
-        <div className="mt-10 border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
           <p>
-            © 2026 <span className="text-purple-400">LOGO</span>. All
-            rights reserved.
+            © {new Date().getFullYear()} LOGO. All rights reserved.
           </p>
+
+          <div className="flex gap-6">
+            <a href="#" className="transition hover:text-white">
+              Facebook
+            </a>
+
+            <a href="#" className="transition hover:text-white">
+              Instagram
+            </a>
+
+            <a href="#" className="transition hover:text-white">
+              GitHub
+            </a>
+          </div>
+
         </div>
+
       </div>
-    </footer>
-  );
+  
+    </div>
+  )
 }
+
+
 
 
 

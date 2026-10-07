@@ -196,18 +196,8 @@ export const products =
     "rating": 3.39,
     "image": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/1.webp"
   },
-  {
-    "id": 29,
-    "title": "Juice",
-    "price": 3.99,
-    "rating": 3.94,
-    "image": "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp"
-  },
-  {
-    "id": 30,
-    "title": "Kiwi",
-    "price": 2.49,
-    "rating": 4.93,
-    "image": "https://cdn.dummyjson.com/product-images/groceries/kiwi/1.webp"
-  }
+ 
 ]
+
+
+
