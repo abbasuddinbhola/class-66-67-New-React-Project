@@ -1,23 +1,25 @@
-import Banner from "./layout/Banner";
-import Footer from "./layout/Footer";
-import Header from "./layout/Header";
-import ProductContainer from "./products/ProductContainer";
-import {products} from "../data/products"
-import {FoodProducts} from "../food/FoodProducts";
 
+import { useState } from "react";
+import AddToCart from "./AddToCart";
 
 export default function App() {
+
+
+
+  const [count, setCount] = useState(0);
+  
+
+  
   return (
-    <div>
-      <Header products={products} FoodProducts={FoodProducts}/>
+    <div className="text-center my-5">
+      {/* <h1 className="text-2xl">Count Is <span className="text-red-500 font-bold">{count}</span></h1>
+      
 
-      <main>
-        <Banner />
-        <ProductContainer products={products} FoodProducts={FoodProducts} />
-       
-      </main>
-
-      <Footer />
+       <div className="flex justify-center gap-1">
+        <button onClick={() => { if (count < 1) return; setCount(count - 1)}} className="border p-2 bg-blue-500 rounded-sm cursor-pointer text-white">Decrement</button>
+          <button onClick={() => setCount(count + 1)} className="border p-2 bg-blue-500 rounded-sm cursor-pointer text-white">Increment</button>
+      </div> */}
+      <AddToCart/>
     </div>
   );
 }
